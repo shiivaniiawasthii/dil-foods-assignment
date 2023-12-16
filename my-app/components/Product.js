@@ -14,13 +14,15 @@ function Product({ product }) {
 
       <div className="mt-3">
         <Link href={`/product/${product._id}`}>
-          <h2 className="text-lg font-semibold hover:underline">
+          <h2 className="text-red-500 text-lg font-semibold hover:underline">
             {product.name}
           </h2>
         </Link>
       </div>
 
-      <div className="text-lg font-semibold mt-2">${product.price}</div>
+      <div className="text-red-500 text-lg font-semibold mt-2">
+        ${product.price}
+      </div>
     </div>
   );
 }
